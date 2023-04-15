@@ -160,11 +160,9 @@ def test2_2():
 def test2_u2():
     
     uprava2_2 = subprocess.run(['python ./testy/2/ukazka2.py'], stdout=subprocess.PIPE, shell=True).stdout.decode('utf-8')
-    #TODO přidat vypsání výpisu na obrazovku
-    print(uprava2_2)
+    # print(uprava2_2)
 
-    if uprava2_2 == "Karel je 38 let starý\nKarel měří 189cm na výšku\nKarel váží 68kg\nKarel je svobodný\nKarel se narodil 1.3.1985":
-        #TODO Opravit tuto funkci, stále fallbackuje do else
+    if uprava2_2 == "Karel je 38 let starý\nKarel měří 189cm na výšku\nKarel váží 68kg\nKarel je svobodný\nKarel se narodil 1.3.1985\n":
         print("Vidíš! Stačilo změnit pouze text v proměné a nemusel si jej měnit 5x!")
         input("Můžeme se posunout dál! Jenom stiskni enter...")
     else:
