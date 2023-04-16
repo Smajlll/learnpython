@@ -170,8 +170,23 @@ def test2_u2():
         input("Po úpravách stiskni enter...")
         test2_u2()
 
-def test2_u3():
+def test2_3():
     #TODO Část o matematice a floatech (+, -, *, /, %)
+    clear()
+    time.sleep(1)
+    print("Už jsme se podívali na vypisování čísel a textu na obrazovku, ale co takhle matematika? Na tu se podíváme teď!")
+    print("V pythonu můžeme používat normální znaménka, jako '+' pro sčítání, '-' pro odčítání, '*' pro násobení a '/' pro dělení")
+    print("Dále jsou zde však 3 'speciální' znaménka, '%' - vypíše zbytek při dělení (například 7 % 3 - výsledek = 1), a poté '**', to jsou mocniny' (například 3**2 = 9)")
+    print("Poslední je '//', to vypíše pouze podíl, bez žádných čísel za desetinou čárkou.")
+    print("Podívej se do souboru ukazka3.py, ve složce testy -> 2, ve které jsou všechny tyto znaménka použíta!")
+    input("Až si soubor prohlídneš, stiskni enter a já jej spustím.\n")
+    subprocess.run('python ./testy/2/ukazka3.py', shell=True)
+    time.sleep(1)
+
+
+
+def test2_u3():
+    #TODO Část o listech
     pass
 
 def main():
@@ -181,6 +196,8 @@ def main():
     print("Pro pokračování na část 'Obeznámení s Programem' stiskni enter.")
     input("Napsal a vytvořil: Vít Smolík ")
     #create_file_in_home()
-    test2_u2() # PRO DEBUG, ODSTRANIT NA PRODUCTION
+    test2_3() # PRO DEBUG, ODSTRANIT NA PRODUCTION
 
 main()
+
+#TODO Skipnutí na jakýkoli test z hl. menu
