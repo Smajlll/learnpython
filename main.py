@@ -186,7 +186,17 @@ def test2_3():
 
 
 def test2_u3():
+    pass
+
+def test2_4():
     #TODO Část o listech
+    pass
+
+def test2_4u():
+    pass
+
+def test2_5():
+    #TODO Závěrečný test
     pass
 
 def main():
@@ -194,10 +204,33 @@ def main():
     print("Vítej!")
     print("Dnes se naučíme základy programovacího jazyku 'python', neboj se je to jednoduché, stačí se jen trochu snažit ;D")
     print("Pro pokračování na část 'Obeznámení s Programem' stiskni enter.")
-    input("Napsal a vytvořil: Vít Smolík ")
-    #create_file_in_home()
-    test2_3() # PRO DEBUG, ODSTRANIT NA PRODUCTION
+    input("Napsal a vytvořil: Vít Smolík\n")
+    print("Pokud chceš pokračovat v učení, od nějaké kapitoly ve které si skončil, zadej číslo před jejím názvem, tečku a číslo testu!")
+    print("Zde jsou tvé možnosti:")
+    print("1.1 - Ahoj, světe!")
+    print("2.1 - Proměné")
+    print("2.2 - Stringy")
+    print("2.3 - Matematika")
+    print("2.4 - Listy")
+    print("2.5 - Závěrečná zkouška 2. kapitoly")
+    zacatek = input("Zadej výběr možnosti: ")
+    #print(zacatek)
+    #time.sleep(11111)
+
+    if zacatek == '1.1':
+        test1()
+    elif zacatek == '2.1':
+        test2()
+    elif zacatek == '2.2':
+        test2_2()
+    elif zacatek == '2.3':
+        test2_3()
+    elif zacatek == '2.4':
+        test2_4()
+    elif zacatek == '2.5':
+        test2_5()
+    else:
+        create_file_in_home()
+    #test2_3() # PRO DEBUG, ODSTRANIT NA PRODUCTION
 
 main()
-
-#TODO Skipnutí na jakýkoli test z hl. menu
